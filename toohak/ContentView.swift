@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        QuizView(choices:
+            QuizChoices(choices:
+                [
+                    QuizChoice(text: "SCREAM", color: .red),
+                    QuizChoice(text: "Die", color: .green),
+                    QuizChoice(text: "Kill", color: .yellow),
+                    QuizChoice(text: "slap", color: .blue)
+                ]
+            )
+        )
     }
 }
 
